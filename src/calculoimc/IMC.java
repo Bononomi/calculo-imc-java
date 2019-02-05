@@ -3,12 +3,23 @@ package calculoimc;
 public class IMC {
 
     double res;
-
+    
+    /**
+     * Calcula o IMC
+     * @double peso
+     * @double altura
+     * @return resultado do calculo
+     */
     public double calcular(double peso, double altura) {
         this.res = peso / (altura * altura);
         return this.res;
     }
-
+    
+    /**
+     * 
+     * @String situacao
+     * @return situação do IMC 
+     */
     public String situacao(String situacao) {
         if (this.res <= 17) {
             return "Muito abaixo do peso";
