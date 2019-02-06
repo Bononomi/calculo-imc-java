@@ -15,7 +15,7 @@ public class CalculoIMC {
         //Define atributos da tela
         
         janela.setDefaultCloseOperation(janela.EXIT_ON_CLOSE);
-        janela.setSize(300, 600);
+        janela.setSize(300, 500);
         janela.add(painel);
         janela.setVisible(true);
         
