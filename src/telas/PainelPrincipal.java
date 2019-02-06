@@ -214,20 +214,22 @@ public class PainelPrincipal extends javax.swing.JPanel {
 
        /////////CONVERTER STRING EM DOUBLE////////////
        double peso = Double.parseDouble(strPeso);
-       double altura = Double.parseDouble(strAltura);
+       double altura = Double.parseDouble(strAltura); 
        //////////////////////////////////////////////
        IMC imc = new IMC();
        
        double vlrIMC = imc.calcular(peso, altura);
        DecimalFormat df = new DecimalFormat("0.##");
        labelVlrIMC.setText(""+df.format(vlrIMC));
-       
+       String resultIMC = labelVlrIMC.getText();
+               
        String situacao = imc.situacao(strPeso);
        labelSituacaoIMC.setText(situacao);
        
        labelNome.setText(strNome);
        
-       this.salvar = strNome + ";" + strPeso + ";" + strAltura + ";" + "\n";
+       this.salvar = strNome + ";" + strPeso + ";" + strAltura + ";" + 
+               resultIMC + ";" + situacao + ";" + "\n";
        
     }//GEN-LAST:event_btnCalcularActionPerformed
 
