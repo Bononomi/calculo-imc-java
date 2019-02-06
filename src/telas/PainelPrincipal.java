@@ -228,8 +228,8 @@ public class PainelPrincipal extends javax.swing.JPanel {
        
        labelNome.setText(strNome);
        
-       this.salvar = strNome + ";" + strPeso + ";" + strAltura + ";" + 
-               resultIMC + ";" + situacao + ";" + "\n";
+       this.salvar = "Nome: "+strNome + ";" + "Peso: "+strPeso + ";" + "Altura: "+strAltura + ";" + 
+               "IMC: "+resultIMC + ";" + "Situacao: "+situacao + ";" + "\n";
        
     }//GEN-LAST:event_btnCalcularActionPerformed
 
